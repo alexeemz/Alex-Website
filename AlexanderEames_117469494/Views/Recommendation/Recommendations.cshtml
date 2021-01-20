@@ -1,0 +1,63 @@
+﻿@model Recommendation
+@{
+    ViewData["Title"] = "References";
+    List<Recommendation> recommendations = ViewBag.recommendations;
+}
+
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>Recommendations</h2>
+            <ol>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li>References</li>
+            </ol>
+        </div>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+<section id="about-us" class="about-us">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="display-4">References</h1>
+
+            <!-- Choose Filter dropdown and form -->
+         <!--  <div>
+                <form method="post" asp-route="FilteredRec">
+                    <p>Filter recommendations by relationship:</p>
+                    <select id="relSelect" asp-for="Relationship" asp-items="  @(Html.GetEnumSelectList<AlexanderEames_117469494.Models.RelationshipType>()) "></select>                                 
+                    <input type="submit" value="Apply Filter" />
+                    </form> -->
+            
+
+            <section id="testimonials" class="testimonials">
+                <div class="container">
+
+                    <div class="row">
+                        @foreach (Recommendation rec in recommendations)
+                        {
+                            <div class="col-lg-6" data-aos="fade-up">
+                                <div class="testimonial-item" style="margin-top:10%;height:200px;">
+
+                                    <h3> @rec.Name</h3>
+                                    <h4>Title: @rec.Title</h4>
+                                    <h4>Phone: @rec.Phone</h4>
+                                    <h4>Email: @rec.Email</h4>
+                                    <p>
+                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                        @rec.Text
+                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </div>
+</section>

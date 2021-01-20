@@ -1,0 +1,114 @@
+﻿<!--@*@model Recommendation*@
+
+@{
+    ViewData["Title"] = "New Recommendation";
+}
+
+
+
+
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>Recommendations</h2>
+            <ol>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li>Make a Recommendation</li>
+            </ol>
+        </div>
+
+    </div>
+</section>--><!-- End Breadcrumbs -->
+<!-- <section id="about-us" class="about-us">
+    <div class="container">
+
+        <div class="row mt-5 justify-content-center" data-aos="fade-up">
+            <div class="col-lg-10">
+
+                <div>
+                    <form method="post" asp-route="AddRec">
+
+
+
+
+
+
+
+                                    <div style=" background-color: #f03c02; padding: 5%; text-align: center; color: white;border-radius:10px;border-color:black;border-style:solid;">
+                                        <h2>Leave a recommendation below</h2>
+                                        <br />
+                                        <div>
+                                            <label asp-for="Name"></label>
+                                            <input asp-for="Name" style="border-radius:5px;" /> <br />
+                                            <span data-aos="fade-up" asp-validation-for="Name" style="font-size:12px;color:white;background-color:#ffae42;"></span> <br /><br />
+                                        </div>
+
+                                        <div>
+                                            <label asp-for="Title"></label>
+                                            <input asp-for="Title" style="border-radius:5px;" /> <br />
+                                            <span data-aos="fade-up" asp-validation-for="Title" style="font-size:12px;color:white;background-color:#ffae42;"></span> <br /><br />
+                                        </div>
+
+                                        <div>
+                                            <label asp-for="Relationship"></label>
+                                            <select asp-for="Relationship" style="border-radius:5px;" asp-items="@(Html.GetEnumSelectList<AlexanderEames_117469494.Models.RelationshipType>())"></select> <br /><br />
+                                        </div>
+
+                                        <div>
+                                            <label asp-for="Email"></label>
+                                            <input asp-for="Email" style="border-radius:5px;" /> <br />
+                                            <span data-aos="fade-up" asp-validation-for="Email" style="font-size:12px;color:white;background-color:#ffae42;"></span><br /><br />
+                                        </div>
+
+                                        <div>
+                                            <label asp-for="Text"></label>
+                                            <textarea asp-for="Text" style="border-radius:5px;" cols="35"></textarea><br />
+                                            <span data-aos="fade-up" asp-validation-for="Text" style="font-size:12px;color:white;background-color:#ffae42;"></span><br /><br />
+                                        </div>
+
+                                        <input type="submit" value="Submit" style="border-style:solid;border-radius:5px;border-color:black;" />
+                                    </div>
+                    </form>
+                    </div>
+            </div>
+            </div>
+            </div>
+</section> -->
+
+<!--style="font-size:12px;color:white;background-color:#ffae42;" -->
+<!--<div class="container">
+<div class="row justify-content-md-center">
+    
+    <form method="post" asp-route="AddRec" style="text-align:center;margin:10%;">
+        <h2>Leave a recommendation for me!</h2>
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" />
+            <span data-aos="fade-up" asp-validation-for="Name" style="font-size:12px;color:white;background-color:#ffae42;"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Title"></label>
+            <input asp-for="Title" />
+            <span data-aos="fade-up" asp-validation-for="Title" style="font-size:12px;color:white;background-color:#ffae42;"></span>
+        </div>
+        <div class="form-group form-check">
+            <label asp-for="Relationship"></label>
+            <select asp-for="Relationship" asp-items=" @*@(Html.GetEnumSelectList<AlexanderEames_117469494.Models.RelationshipType>())*@"></select>-->
+            <!--  <span asp-validation-for="Relationship"></span> <br /> --> <!-- I do not need this because I used a select instead of input-->
+
+        <!--</div>
+        <div class="form-group form-check">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" />
+            <span data-aos="fade-up" asp-validation-for="Email" style="font-size:12px;color:white;background-color:#ffae42;"></span>
+        </div>
+        <div class="form-group form-check">
+            <label asp-for="Text"></label>
+            <textarea asp-for="Text" style="border-radius:5px;" cols="35"></textarea>
+            <span data-aos="fade-up" asp-validation-for="Text" style="font-size:12px;color:white;background-color:#ffae42;"></span>
+        </div>
+        <button style="background-color: #fd5c28;" type="submit" class="btn btn-primary">Submit</button> <br />
+    </form>
+       </div>
+</div>-->

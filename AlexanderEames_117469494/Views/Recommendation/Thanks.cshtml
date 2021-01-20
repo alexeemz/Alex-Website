@@ -1,0 +1,31 @@
+﻿@model Recommendation
+
+@{
+    ViewData["Title"] = "Make a Recommendation";
+}
+
+
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <ol>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li>Make a Recommendation</li>
+            </ol>
+        </div>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+<!-- ======= Cta Pricing Section ======= -->
+<section id="cta-pricing" class="cta-pricing">
+    <div class="container">
+
+        <div class="text-center">
+            <h3>Thank you, @Model.Name.</h3>
+            <p>Your recommendation has been created successfully. You can view all recommendations on the view recommendations page.</p>
+            <a class="cta-btn" asp-controller="Recommendation" asp-action="Recommendations">View Recommendations</a>
+        </div>
+
+    </div>
+</section><!-- End Cta Pricing Section -->
