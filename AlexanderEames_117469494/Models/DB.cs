@@ -18,17 +18,17 @@ namespace AlexanderEames_117469494.Models
                 Title = "Dir. Web Operations - Northwell Health",
                 Phone  = "N/A",
                 Text = "Lana was my supervisor and head of the web production team that I worked with during my 6 month internship with Northwell Health",
-                Email = "uilliano@northwell.edu",
+                Email = "N/A",
                 Location = "New York, USA"
             },
             new Recommendation()
             {
                 Name = "Rory MacCarthy",
                 Title = "Manager - Glandore Inn, Ireland",
-                Phone  = "+353872931915",
+                Phone  = "N/A",
                 Text = "I have worked closely with Rory for over four years at the Glandore Inn where he was involved in my training and managing." +
                 "\n",
-                Email = "rorymaccarthy72@gmail.com",
+                Email = "N/A",
                 Location = "West Cork, Ireland"
             },
             new Recommendation()
@@ -36,8 +36,8 @@ namespace AlexanderEames_117469494.Models
                 Name = "Peter Hayward-Butt",
                 Title = "CEO - Ethos Capital, Johannesburg",
                 Text = "I spent a large amount of time working and staying with Peter whilst completing my internship with Ethos Private Equity.",
-                Phone = "+27829221398",
-                Email = "phayward-butt@ethos.co.za",
+                Phone = "N/A",
+                Email = "N/A",
                 Location = "Johannesburg, South Africa"
             },
             new Recommendation()
@@ -45,8 +45,8 @@ namespace AlexanderEames_117469494.Models
                 Name = "William Bartley",
                 Title = "House Master - Bandon Grammar School",
                 Text = "William was both my teacher and house master whilst I was boarding in Bandon Grammar School. I worked closely with him inside the classroom, as a student, and in other matters in my role as mentor and prefect in 5th and 6th year respectively.",
-                Phone = "+353872905582",
-                Email = "wbartley@bgsmail.ie"
+                Phone = "N/A",
+                Email = "N/A"
             }
         };
     }
